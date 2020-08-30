@@ -45,11 +45,11 @@ mvn install
   <directory>src/main/resources/dwls</directory>
 </fileSet>
 <fileSet filtered="true" encoding="UTF-8">
-      <directory>src/main/resources/examples</directory>
-    </fileSet> 
-    <fileSet filtered="true" encoding="UTF-8">
-      <directory>src/main/resources/schemas</directory>
-    </fileSet>
+  <directory>src/main/resources/examples</directory>
+</fileSet> 
+<fileSet filtered="true" encoding="UTF-8">
+   <directory>src/main/resources/schemas</directory>
+</fileSet>
 ```
 
 #### Maven archetype - Generate new Mule project
