@@ -28,13 +28,6 @@ apiDescription=apiDescription
 mvn archetype:create-from-project -Darchetype.properties=../archetype.properties
 ```
 
-- Go to archetype folder and do maven install. This will upload the artifact to your local .m2 repository
-
-```
-cd target/generated-sources/archetype
-mvn install
-```
-
 #### Create empty packages under resources in Maven archetype
 
 - From your Anypoint Studio, locate `archetype-metadata.xml` under `target/generated-sources/archetype/src/main/resources/META-INF/maven`
@@ -50,6 +43,12 @@ mvn install
 <fileSet filtered="true" encoding="UTF-8">
    <directory>src/main/resources/schemas</directory>
 </fileSet>
+```
+- Go to archetype folder and do maven install. This will upload the artifact to your local .m2 repository
+
+```
+cd target/generated-sources/archetype
+mvn install
 ```
 
 #### Maven archetype - Generate new Mule project
